@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160813122146) do
   create_table "owners", force: :cascade do |t|
     t.string   "firstName"
     t.string   "lastName"
-    t.string   "ownerType"
+    t.string   "ownerType", default: "person"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
